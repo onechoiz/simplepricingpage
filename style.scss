@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+$colBG: #f1faee;
+$col1: #a8dadc;
+$col2: #457b9d;
+$col3: #1d3557;
+$red: #e63946;
+
+.wrapper {
+    background-color: $colBG;
+    text-align: center;
+    padding: 40px 20px;
+
+    .heading-hero {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .heading {
+            color: $col3;
+            font-size: 45px;
+        }
+
+        .info {
+            padding: 30px;
+            color: $col3;
+            line-height: 1.8;
+        }
+    }
+
+    .boxes {
+        margin: 60px auto;
+        width: 70%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .b1 {
+            background-color: $red;
+            .one {
+                color: $red;
+            }
+        }
+        .b2 {
+            background-color: $col2;
+            .two {
+                color: $col2;
+            }
+        }
+        .b3 {
+            background-color: $col3;
+            .three {
+                color: $col3;
+            }
+        }
+        .box {
+            width: 280px;
+            height: 400px;
+            border-radius: 10px;
+            margin-top: 40px;
+            color: white;
+
+            .price {
+                background-color: white;
+                width: 210px;
+                height: 130px;
+                border-radius: 10px;
+                text-transform: uppercase;
+                position: relative;
+                left: 50%;
+                top: -40px;
+                transform: translate(-50%, 0);
+                box-shadow: 0px 5px 100px #00436535, 0px 2px 6px #82a9bcb0;
+
+                h2 {
+                    padding: 20px 3px 10px;
+                }
+            }
+
+            .box-info {
+                padding: 14px 4px;
+            }
+
+            .btn {
+                width: 140px;
+                padding: 13px;
+                border-radius: 8px;
+                border: none;
+                margin-top: 20px;
+                font-weight: 400;
+            }
+        }
+    }
+}
